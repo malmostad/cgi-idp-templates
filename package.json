@@ -15,10 +15,13 @@
         "eslint": "^6.6.0",
         "gulp": "^4.0.2",
         "gulp-autoprefixer": "^7.0.1",
+        "gulp-clean": "^0.4.0",
         "gulp-connect": "^5.7.0",
         "gulp-inline-base64": "^0.1.5",
+        "gulp-nunjucks": "^5.0.1",
         "gulp-replace": "^1.0.0",
         "gulp-sass": "^4.0.2",
+        "gulp-zip": "^5.0.1",
         "node-sass": "^4.13.0"
     },
     "dependencies": {}
