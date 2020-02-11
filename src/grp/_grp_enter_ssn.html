@@ -1,0 +1,24 @@
+PARM{include:/include/header.html?title=text-logintomg}
+			<div class="row">
+				<div class="col colfull text-center">
+					<h3>PARM{text-ccp11-title}</h3>
+					<form action="/mg-localPARM{form-url}" method="post" name="form" accept-charset="UTF-8">
+						<div class="row">
+							<div class="col colspacer"></div>
+							<div class="col colcenter">
+								<label for="ssn">PARM{text-ccp11-ssn}</label>
+								<div class="input-group">
+									<input type="tel" name="ssn" class="form-control input-group-first" id="ssn" placeholder="yyyymmddxxxx">
+									<span class="input-group-col">
+										<button type="submit" class="button input-group-last">PARM{text-ccp11-ssn-button}</button>
+									</span>
+								</div>
+								<div class="alert alert-red" style="PARM{error-message}display:none;"><span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>PARM{error-message}</div>
+								<div><a href="/">PARM{text-clickhereformainpage}</a></div>
+							</div>
+							<div class="col colspacer"></div>
+						</div>
+					</form>
+				</div>
+			</div>
+PARM{include:/include/footer.html}

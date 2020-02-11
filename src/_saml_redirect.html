@@ -1,0 +1,23 @@
+PARM{include:/include/header.html?title=text-logintomg}
+			<div class="row">
+				<div class="col colfull text-center">
+					<h3>PARM{text-redirect-title}</h3>
+					<p id="infotext">PARM{text-redirect-message}</p>
+					<img src="/mg-local/mg-gfx/rotation.gif">
+				</div>
+				<div>
+					<form name="form-redirect" action="PARM{action}" method="post">
+						<textarea rows="10" cols="80" name="PARM{type}" style="display:none">PARM{value}</textarea>
+						<textarea rows="10" cols="80" name="RelayState" style="display:none">PARM{relay_state}</textarea>
+						<noscript><button type="submit">PARM{text-next}</button></noscript>
+					</form>
+					<script type="text/javascript">
+						/* Timout 10 sec to really show message */
+						/* Remove timeout in production and keep only "document.forms['form-redirect'].submit();"*/
+						setTimeout(function(){
+							document.forms['form-redirect'].submit();
+						}, 10000);
+					</script>
+				</div>
+			</div>
+PARM{include:/include/footer.html}

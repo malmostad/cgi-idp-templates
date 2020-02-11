@@ -1,0 +1,25 @@
+{
+    "name": "cgi-idp-templates",
+    "version": "1.0.0",
+    "description": "Templates for CGI IDP",
+    "main": "gulpfile.js",
+    "scripts": {},
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/malmostad/cgi-idp-templates.git"
+    },
+    "author": "AFRY",
+    "license": "UNLICENSED",
+    "homepage": "https://github.com/malmostad/cgi-idp-templates",
+    "devDependencies": {
+        "eslint": "^6.6.0",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-connect": "^5.7.0",
+        "gulp-inline-base64": "^0.1.5",
+        "gulp-replace": "^1.0.0",
+        "gulp-sass": "^4.0.2",
+        "node-sass": "^4.13.0"
+    },
+    "dependencies": {}
+}

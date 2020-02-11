@@ -1,1 +1,4 @@
-# cgi-idp-templates
+# CGI IDP Templates
+
+Use gulp to run demo
+
