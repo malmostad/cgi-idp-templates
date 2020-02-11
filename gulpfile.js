@@ -20,7 +20,7 @@
         fs            = require('fs'),
 
         cleanDist     = () => {
-            return src('dist', { read: false })
+            return src('dist', { read: false, allowEmpty: true })
                 .pipe(clean());
         },
 
