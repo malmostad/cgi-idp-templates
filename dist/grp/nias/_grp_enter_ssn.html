@@ -1,0 +1,45 @@
+
+PARM{include:/include/header.html}
+
+        <!-- Box -->
+        <div class="box box--login PARM{box-class}">
+
+            <a class="back-button" href="/">
+                <div class="icon icon-back" title="PARM{text-back}"></div>
+                <div class="icon icon-back-black" title="PARM{text-back}"></div>
+            </a>
+
+            <h1 class="heading">PARM{text-grp-header-mobile-nias}</h1>
+            <h2 class="subheading" style="PARM{error-display}">PARM{error-message}</h2>
+
+            <!-- Step 1 -->
+            <form action="/mg-localPARM{form-url}" class="login-form" method="post">
+
+                <fieldset class="PARM{step1-class}">
+
+                    <div class="control-group" style="PARM{step1-display}">
+                        <label for="ssn">PARM{text-mbi-ssn}</label>
+                        <div class="controls">
+                            <input type="text" autocomplete="off" name="ssn" id="ssn" PARM{step1-placeholder} value="" />
+                        </div>
+                    </div>
+
+                    <div class="button-wrapper">
+                        <input type="submit" class="button button--submit" value="OK">
+                    </div>
+
+                </fieldset>
+
+            </form>
+
+        </div>
+        <!-- Box End -->
+
+        <script type="text/javascript" src="/mg-local/pluginload.js"></script>
+        <script language="javascript" type="text/javascript">
+            pluginLoadEvent(function(){
+                    document.getElementById("ssn").focus();
+            });
+        </script>
+
+PARM{include:/include/footer.html}
