@@ -59,7 +59,7 @@
                             <div>
                                 <div>
 
-                                    <a href="../">Tillbaka</a>
+                                    <a href="javascript:history.back()">Tillbaka</a>
 
                                     <div class="af-contentWrapper">
                                         <h4>PARM{text-index-choose}</h4>
@@ -75,11 +75,6 @@
                                                 PARM{text-ccp11-name}
                                             </div>
                                         </a>
-                                        <script type="text/javascript">
-                                            var agent = navigator.userAgent.toLowerCase();
-                                            if (agent.indexOf("android") != -1 || navigator.userAgent.match(/Windows Phone/i) || navigator.platform.indexOf("iPhone") != -1 || navigator.platform.indexOf("iPad") != -1 || agent.lastIndexOf('chrome/' || /Edge\/12./i.test(agent)) > 0) { }
-                                            else { document.write('<a href="/mg-local/login?type=ccp8" data-toggle="tooltip" title="PARM{text-ccp8-description}"><div class="well" style="PARM{styleccp8}">PARM{text-ccp8-name}<span class="pull-right"><img src="/images/arrow.svg"></span></div></a>'); }
-                                        </script>
                                         <a href="/mg-local/login?type=ccp14" data-toggle="tooltip"
                                             title="PARM{text-ccp14-description}">
                                             <div class="btn btn-default" style="PARM{styleccp14}">
@@ -104,7 +99,7 @@
                                                 PARM{text-idp0-name}
                                             </div>
                                         </a>
-                                        <div class="alert alert-blue" style="PARM{system-sysmsg-display};"><span
+                                        <div class="alert alert-red" style="PARM{system-sysmsg-display};"><span
                                                 class="closebtn"
                                                 onclick="this.parentElement.style.display='none';">&times;</span>PARM{system-sysmsg-content}
                                         </div>
@@ -155,7 +150,7 @@
     </section>
 
     <script src='https://assets.malmo.se/external/v4/malmo.js'></script>
-    <script src='/js/script.js'></script>
+
 </body>
 
 </html>

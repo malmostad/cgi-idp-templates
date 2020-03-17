@@ -92,9 +92,22 @@
                 .pipe(replace(/PARM{include:\/(.*?)}/ig, '{% include \"\$1\" %}'))
                 .pipe(replace(/PARM{include:(.*?)}/ig, '{% include \"\$1\" %}'))
                 .pipe(replace(/PARM{text-languageid}/ig, 'sv'))
+                .pipe(replace(/PARM{text-index-choose}/ig, 'Välj inloggning'))
+                .pipe(replace(/PARM{text-ccp10-name}/ig, 'BankID på samma enhet'))
+                .pipe(replace(/PARM{text-ccp11-name}/ig, 'BankID på annan enhet'))
+                .pipe(replace(/PARM{text-ccp14-name}/ig, 'SITHS'))
+                .pipe(replace(/PARM{text-ccp17-name}/ig, 'Freja eID+'))
+                .pipe(replace(/PARM{text-ccp18-name}/ig, 'Net iD Access'))
+                .pipe(replace(/PARM{text-idp0-name}/ig, 'Okänt system'))
+                .pipe(replace(/PARM{system-sysmsg-content}/ig, 'Ny standardmall för GUI i vår testmiljö. (Denna informationstext används endast vid allvarliga fel i produktion)'))
+                .pipe(replace(/PARM{text-footer-companyname}/ig, 'CGI Sverige AB'))
+                .pipe(replace(/PARM{text-footer-about}/ig, 'Om tjänsten'))
+                .pipe(replace(/PARM{text-footer-cookieinfo}/ig, 'Information om kakor (cookies)'))
+                .pipe(replace(/PARM{text-footer-contact}/ig, 'Kontakt & support'))
                 .pipe(nunjucks.compile({
                     my_data: 'is here'
                 }))
+                .pipe(replace(/http-equiv="refresh"/ig, 'name="refresh"'))
                 .pipe(dest('./demo'));
         },
 
@@ -124,7 +137,6 @@
                     enable: true,
                     port  : 8088
                 },
-                host      : 'localhost',
                 port      : 8080
             });
             done();
