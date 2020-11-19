@@ -33,6 +33,11 @@ PARM{include:/include/header.html?title=text-logintomg}
                             PARM{text-ccp11-name}
                         </div>
                     </a>
+                    <script type="text/javascript">
+                        var agent = navigator.userAgent.toLowerCase(); 
+                        if(agent.indexOf("android") != -1 ||navigator.userAgent.match(/Windows Phone/i)||navigator.platform.indexOf("iPhone") != -1 || navigator.platform.indexOf("iPad") != -1 || agent.lastIndexOf('chrome/' || /Edge\/12./i.test(agent)) > 0){}
+                        else{document.write('<a href="/mg-local/login?type=ccp8" data-toggle="tooltip" title="PARM{text-ccp8-description}"><div class="well" style="PARM{styleccp8}">PARM{text-ccp8-name}<span class="pull-right"><img src="/images/arrow.svg"></span></div></a>');} 
+                    </script>
                     <a href="/mg-local/login?type=ccp14" data-toggle="tooltip" title="PARM{text-ccp14-description}">
                         <div class="btn btn-default" style="PARM{styleccp14}">
                             PARM{text-ccp14-name}
